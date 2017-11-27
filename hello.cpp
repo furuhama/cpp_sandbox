@@ -1,3 +1,4 @@
+/* Copyright 2017 furuhama */
 #include <iostream>
 
 int main() {
