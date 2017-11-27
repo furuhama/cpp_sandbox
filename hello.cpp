@@ -1,5 +1,5 @@
 #include <iostream>
-namespace std {
+using namespace std;
 
 int main() {
   int a;
@@ -14,5 +14,3 @@ int main() {
   cout << "sum of numbers you input: " << total << endl;
   return 0;
 }
-
-}  // namespace std
