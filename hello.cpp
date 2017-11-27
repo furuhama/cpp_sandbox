@@ -1,15 +1,19 @@
 #include <iostream>
 
 int main() {
+  using std::cout;
+  using std::cin;
+  using std::endl;
+
   int a;
-  std::cout << "hello, world!" << std::endl;
-  std::cout << "please input integer, 5 times" << std::endl;
+  cout << "hello, world!" << endl;
+  cout << "please input integer, 5 times" << endl;
   int total;
   for (int i = 0; i < 5; i++) {
-    std::cin >> a;
+    cin >> a;
     total += a;
   }
-  std::cout << "computing";
-  std::cout << "sum of numbers you input: " << total << std::endl;
+  cout << "computing";
+  cout << "sum of numbers you input: " << total << endl;
   return 0;
 }
