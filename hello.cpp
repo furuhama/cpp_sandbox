@@ -10,21 +10,21 @@ int main() {
 
   class Monster {
    private:
-     string name;
-     int power;
+    string name;
+    int power;
    public:
-     explicit Monster(string n, int p) {
-       name = n;
-       power = p;
-     }
-     void roar() {
-       cout << "grrrr... my name is " << name << endl;
-     }
-     void attack() {
-       cout << name << " attacked!!!" << endl;
-       cout << "SMAAAAAASH!!!" << endl;
-       cout << "Damege: " << power << endl;
-     }
+    explicit Monster(string n, int p) {
+      name = n;
+      power = p;
+    }
+    void roar() {
+      cout << "grrrr... my name is " << name << endl;
+    }
+    void attack() {
+      cout << name << " attacked!!!" << endl;
+      cout << "SMAAAAAASH!!!" << endl;
+      cout << "Damege: " << power << endl;
+    }
   };
 
   string inputName;
