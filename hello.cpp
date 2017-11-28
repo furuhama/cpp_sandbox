@@ -11,22 +11,34 @@ int main() {
   class Monster {
    private:
      string name;
+     int power;
    public:
-     explicit Monster(string n) {
+     explicit Monster(string n, int p) {
        name = n;
+       power = p;
      }
      void roar() {
        cout << "grrrr... my name is " << name << endl;
      }
+     void attack() {
+       cout << name << " attacked!!!" << endl;
+       cout << "SMAAAAAASH!!!" << endl;
+       cout << "Damege: " << power << endl;
+     }
   };
 
-  string name;
-  cout << "please input name of monster" << endl;
+  string inputName;
+  int inputAttack;
+  // cout << "please input name of monster" << endl;
   // cin >> name;
-  name = "tama";
+  inputName = "tama";
+  inputAttack = 213;
+
   cout << "summon your monster..." << endl;
   // set Monster instance
-  Monster m(name);
+  Monster m(inputName, inputAttack);
   m.roar();
+  m.attack();
+
   return 0;
 }
