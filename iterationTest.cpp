@@ -3,9 +3,12 @@
 
 int main() {
     for (int i = 0; i < 5; i++) {
-        int a = i + 1;
-        int b = i * 2;
-        std::cout << a + b << std::endl;
+      for (int j = 0; j < 5; j++) {
+        int a = i * j;
+        int b = i * i * j * j;
+        std::cout << a << ' ' << b << std:: endl;
+      }
     }
     return 0;
 }
+
