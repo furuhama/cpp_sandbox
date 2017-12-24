@@ -5,8 +5,8 @@ if [ $# -ge 2 ]
   then
     echo "An error occured. Too many args."
 else
-  # compile .cpp file as temp.out by clang++
-  clang++ $1 -o temp.out
+  # compile .cpp file as temp.out by clang++ with c++11 extensions
+  clang++ $1 -o temp.out -std=c++11
 
   # run compiled binary file
   ./temp.out
