@@ -1,6 +1,7 @@
 /* copyright furuhama 2017 */
 #include <iostream>
 #include <vector>
+#include <map>
 
 int main() {
     // 以下2行は速くするためのおまじない(らしい)
@@ -29,4 +30,14 @@ int main() {
     // n = vc.size() / 2;
     // if (vc[n] == vc.at(n))
     //     std::cout << n << std::endl;
+
+    // *** Map usage ***
+    std::map<char, int> mp;  // <key, value>という記法をとる
+    mp['a'] = 100;
+    mp['b'] = 200;
+    std::cout << mp['a'] << ' ' << mp['b'] << std::endl;
+
+    mp.insert(std::map<char, int>::value_type('x', 300));
+    if (mp.find('x') != mp.end())
+        std::cout << mp['x'] << std::endl;
 }
