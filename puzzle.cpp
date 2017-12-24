@@ -3,6 +3,7 @@
 #include <vector>
 #include <map>
 #include <string>
+#include <algorithm>
 
 int main() {
     // 以下2行は速くするためのおまじない(らしい)
@@ -43,15 +44,21 @@ int main() {
     //     std::cout << mp['x'] << std::endl;
 
     // *** string usage ***
-    std::string str;
-    str = "this is a string";
-    str[2] = 'a';  // []でアクセスできる
-    str[3] = 't';
-    if (str.length() >= 5) {  // length()で長さ取得
-        std::cout << str << std::endl;
-    }
-    // 文字列検索 あればindex なければstring::niposを返す
-    if (str.find("is") != std::string::npos) {
-        std::cout << str.find("is") << std::endl;
-    }
+    // std::string str;
+    // str = "this is a string";
+    // str[2] = 'a';  // []でアクセスできる
+    // str[3] = 't';
+    // if (str.length() >= 5) {  // length()で長さ取得
+    //     std::cout << str << std::endl;
+    // }
+    // // 文字列検索 あればindex なければstring::niposを返す
+    // if (str.find("is") != std::string::npos) {
+    //     std::cout << str.find("is") << std::endl;
+    // }
+
+    // *** swap usage ***
+    int a = 1;
+    int b = 5;
+    std::swap(a, b);
+    std::cout << "a: " << a << " b: " << b << std::endl;
 }
