@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <string>
 
 int main() {
     // 以下2行は速くするためのおまじない(らしい)
@@ -32,12 +33,25 @@ int main() {
     //     std::cout << n << std::endl;
 
     // *** Map usage ***
-    std::map<char, int> mp;  // <key, value>という記法をとる
-    mp['a'] = 100;
-    mp['b'] = 200;
-    std::cout << mp['a'] << ' ' << mp['b'] << std::endl;
+    // std::map<char, int> mp;  // <key, value>という記法をとる
+    // mp['a'] = 100;
+    // mp['b'] = 200;
+    // std::cout << mp['a'] << ' ' << mp['b'] << std::endl;
 
-    mp.insert(std::map<char, int>::value_type('x', 300));
-    if (mp.find('x') != mp.end())
-        std::cout << mp['x'] << std::endl;
+    // mp.insert(std::map<char, int>::value_type('x', 300));
+    // if (mp.find('x') != mp.end())
+    //     std::cout << mp['x'] << std::endl;
+
+    // *** string usage ***
+    std::string str;
+    str = "this is a string";
+    str[2] = 'a';  // []でアクセスできる
+    str[3] = 't';
+    if (str.length() >= 5) {  // length()で長さ取得
+        std::cout << str << std::endl;
+    }
+    // 文字列検索 あればindex なければstring::niposを返す
+    if (str.find("is") != std::string::npos) {
+        std::cout << str.find("is") << std::endl;
+    }
 }
