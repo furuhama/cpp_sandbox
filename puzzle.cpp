@@ -4,6 +4,10 @@
 #include <map>
 #include <string>
 #include <algorithm>
+#include <utility>
+
+typedef unsigned long ul;
+typedef std::pair<ul, ul> P;
 
 int main() {
     // 以下2行は速くするためのおまじない(らしい)
@@ -57,8 +61,18 @@ int main() {
     // }
 
     // *** swap usage ***
-    int a = 1;
-    int b = 5;
-    std::swap(a, b);
-    std::cout << "a: " << a << " b: " << b << std::endl;
+    // int a = 1;
+    // int b = 5;
+    // std::swap(a, b);
+    // std::cout << "a: " << a << " b: " << b << std::endl;
+
+    // *** typedef usage ***
+    std::vector<P> vc;
+    int n;
+    std::cin >> n;
+    while (n--) {
+        ul x, y;
+        std::cin >> x >> y;
+        vc.push_back(P(x, y));
+    }
 }
