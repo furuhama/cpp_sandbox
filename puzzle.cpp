@@ -5,9 +5,11 @@
 #include <string>
 #include <algorithm>
 #include <utility>
+// for文のマクロ
+#define REP(i, n) for (int i = 0; i < n; i++)
 
-typedef unsigned long ul;
-typedef std::pair<ul, ul> P;
+// typedef unsigned long ul;
+// typedef std::pair<ul, ul> P;
 
 int main() {
     // 以下2行は速くするためのおまじない(らしい)
@@ -67,12 +69,17 @@ int main() {
     // std::cout << "a: " << a << " b: " << b << std::endl;
 
     // *** typedef usage ***
-    std::vector<P> vc;
-    int n;
-    std::cin >> n;
-    while (n--) {
-        ul x, y;
-        std::cin >> x >> y;
-        vc.push_back(P(x, y));
+    // std::vector<P> vc;
+    // int n;
+    // std::cin >> n;
+    // while (n--) {
+    //     ul x, y;
+    //     std::cin >> x >> y;
+    //     vc.push_back(P(x, y));
+    // }
+
+    // *** for macro usage ***
+    REP(i, 10) {
+        std::cout << i << std::endl;
     }
 }
