@@ -1,5 +1,6 @@
+/* Copyright 2017 furuhama */
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 int Eratosthenes(int n) {
   int arr[n];
