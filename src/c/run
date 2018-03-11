@@ -8,11 +8,14 @@ if [ $# -ge 2 ]
     echo "An error occured. Too many args."
 else
   # compile .c file as temp.out by clang
+  echo ==== compile start ====
   clang $1 -o temp.out
 
   # run compiled binary file
+  echo === run binary file ===
   ./temp.out
 
   # delete compiled binary file
+  echo ==== remove binary ====
   rm temp.out
 fi
