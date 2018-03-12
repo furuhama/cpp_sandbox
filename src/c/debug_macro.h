@@ -3,6 +3,6 @@
 #ifndef _SRC_C_DEBUG_MACRO_H_
 #define _SRC_C_DEBUG_MACRO_H_
 
-#define DEBUG(t, x) printf(#x "\t= %" #t "\n", (x))
+#define DEBUG(type, var) printf(#var "\t= %" #type "\n", (var))
 
 #endif  // _SRC_C_DEBUG_MACRO_H_
