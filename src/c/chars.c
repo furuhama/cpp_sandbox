@@ -12,9 +12,6 @@ int main() {
     char str2[] = "145";
     int num = atoi(str2);
 
-    printf("%s\n", str1);
-    printf("%d\n", i);
-    printf("%d\n",num);
     DEBUG(s, str1);
     DEBUG(d, i);
     DEBUG(d, num);
