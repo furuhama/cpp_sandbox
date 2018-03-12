@@ -2,9 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-#define DEBUG_S(x) printf(#x "\t= %s\n", (x))
-#define DEBUG_D(x) printf(#x "\t= %d\n", (x))
+#include "debug_macro.h"
 
 int main() {
     // try to print char array without EOS(= End Of String)
