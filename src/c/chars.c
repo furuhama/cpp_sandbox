@@ -15,9 +15,9 @@ int main() {
     printf("%s\n", str1);
     printf("%d\n", i);
     printf("%d\n",num);
-    DEBUG_S(str1);
-    DEBUG_D(i);
-    DEBUG_D(num);
+    DEBUG(s, str1);
+    DEBUG(d, i);
+    DEBUG(d, num);
 
     return 0;
 }
