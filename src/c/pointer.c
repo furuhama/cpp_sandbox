@@ -5,6 +5,9 @@
 
 void func(int *pvalue);  // prototype definition
 int getaverage(int data[10]);
+// this also works like notations below
+// int getaverage(int data[]);
+// int getaverage(int *data);
 
 int main() {
     int *p;
