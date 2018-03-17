@@ -15,5 +15,8 @@ int main() {
     data.age = 10;
     DEBUG(d, data.age);
 
+    strcpy(data.status, "ほげげ");
+    DEBUG(s, data.status);
+
     return 0;
 }
