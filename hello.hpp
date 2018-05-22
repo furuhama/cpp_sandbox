@@ -6,15 +6,16 @@
 
 class Monster {
  private:
-  std::string name;
-  int power;
+    std::string name;
+    int power;
+
  public:
-  Monster(std::string n, int p) {
-    name = n;
-    power = p;
-  }
-  void roar();
-  void attack();
+    Monster(std::string n, int p) {
+        name = n;
+        power = p;
+    }
+    void roar();
+    void attack();
 };
 
 #endif  // HELLO_HPP_
