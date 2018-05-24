@@ -33,6 +33,14 @@ Person::Person() {
     old = 0;
 }
 
+Person::Person(std::string n, std::string j, int o) {
+    std::cout << "Init Person with args" << std::endl;
+
+    name = n;
+    job = j;
+    old = o;
+}
+
 Person::~Person() {
     std::cout << "Person class instance is successfully deleted." << std::endl;
 }

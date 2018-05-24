@@ -10,9 +10,13 @@ int main() {
     // p.setOld(15);
     // p.print();
 
-    Person p;
+    Person p("ほげ", "ほげ", 15);
     std::cout << "Finish initializing" << std::endl;
     p.print();
+
+    Person* pp = new Person("にゃん", "わん", 5);
+    (*pp).print();
+    delete pp;
 
     return 0;
 }

@@ -12,6 +12,7 @@ class Person {
      // this is a constructor for Person class
      // to initialize every attribute as it should be
      Person();
+     Person(std::string n, std::string j, int o);
 
      // this is a destructor for Person class
      // called when its instance would be deleted from memory
