@@ -31,6 +31,8 @@ Person::Person() {
     name = "ななし";
     job = "無職";
     old = 0;
+
+    objectCount++;
 }
 
 Person::Person(std::string n, std::string j, int o) {
@@ -39,8 +41,18 @@ Person::Person(std::string n, std::string j, int o) {
     name = n;
     job = j;
     old = o;
+
+    objectCount++;
 }
 
 Person::~Person() {
     std::cout << "Person class instance is successfully deleted." << std::endl;
+
+    objectCount--;
+}
+
+int Person::objectCount = 0;
+
+void Person::printObjectCount() {
+    std::cout << "The number of objects is: " << objectCount << std::endl;
 }
