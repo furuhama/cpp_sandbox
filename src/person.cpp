@@ -32,3 +32,7 @@ Person::Person() {
     job = "無職";
     old = 0;
 }
+
+Person::~Person() {
+    std::cout << "Person class instance is successfully deleted." << std::endl;
+}
