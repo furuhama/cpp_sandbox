@@ -24,3 +24,11 @@ void Person::print() {
     std::cout << "job: " << job << std::endl;
     std::cout << "old: " << old << std::endl;
 }
+
+Person::Person() {
+    std::cout << "Init Person class!" << std::endl;
+
+    name = "ななし";
+    job = "無職";
+    old = 0;
+}
