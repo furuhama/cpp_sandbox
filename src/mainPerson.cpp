@@ -15,7 +15,8 @@ int main() {
     p.print();
 
     Person* pp = new Person("にゃん", "わん", 5);
-    (*pp).print();
+    // (*pp).print();
+    pp->print();
     delete pp;
 
     return 0;
