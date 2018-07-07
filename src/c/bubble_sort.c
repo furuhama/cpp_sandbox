@@ -1,8 +1,25 @@
 /* Copyright 2018 furuhama */
 
+#include "stdio.h"
 #include "./debug_macro.h"
 
+void print_array(int array[], int n) {
+    printf("[");
+
+    for (int i = 0; i < n; i++) {
+        printf("%d", array[i]);
+
+        if (i != n-1) {
+            printf(", ");
+        }
+    }
+
+    printf("]\n");
+}
+
 void SortBubble(int array[], int n) {
+    print_array(array, n);
+
     int tmp;
 
     for (int i = 0; i < n - 1; i++) {
@@ -15,10 +32,9 @@ void SortBubble(int array[], int n) {
         }
     }
 
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", array[i]);
-    }
+    print_array(array, n);
 }
+
 
 int main() {
     int target[] = { 10, 2, 3, 17, 37, 3, 22, 43, 32 };
