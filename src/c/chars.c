@@ -1,5 +1,3 @@
-/* Copyright 2018 furuhama */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

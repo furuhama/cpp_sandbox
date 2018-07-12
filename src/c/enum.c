@@ -1,5 +1,3 @@
-/* Copyright 2018 furuhama */
-
 #include "./debug_macro.h"
 
 enum {

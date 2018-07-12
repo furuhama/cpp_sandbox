@@ -1,4 +1,3 @@
-/* copyright furuhama 2017 */
 #include <iostream>
 #include <vector>
 #include <map>

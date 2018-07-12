@@ -1,5 +1,3 @@
-/* Copyright 2017 furuhama */
-
 #include <iostream>
 #include <string>
 #include "hello.hpp"

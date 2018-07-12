@@ -1,5 +1,3 @@
-/* Copyright 2017 furuhama */
-
 #include <stdio.h>
 
 #define SIZE 5

@@ -1,5 +1,3 @@
-/* Copyright 2017 furuhama */
-
 #include <iostream>
 #include "person.hpp"
 

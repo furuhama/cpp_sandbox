@@ -1,4 +1,3 @@
-/* Copyright 2017 furuhama */
 // testing c language with c++ compiler
 #include <stdio.h>
 

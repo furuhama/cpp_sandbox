@@ -1,4 +1,3 @@
-/* Copyright 2017 furuhama */
 #ifndef HELLO_HPP_
 #define HELLO_HPP_
 

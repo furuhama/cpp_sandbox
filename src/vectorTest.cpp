@@ -1,5 +1,3 @@
-/* Copyright 2017 furuhama */
-
 #include <iostream>
 #include <vector>
 #define REP(i, n) for (int i = 0; i < n; i++)
