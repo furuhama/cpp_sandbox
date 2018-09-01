@@ -1,4 +1,6 @@
-#pragma once
+#ifndef SRC_PERSON_HPP
+#define SRC_PERSON_HPP
+
 #include <string>
 
 class Person {
@@ -23,3 +25,5 @@ class Person {
      void setOld(int o);
      void print();
 };
+
+#endif // SRC_PERSON_HPP
